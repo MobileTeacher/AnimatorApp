@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/rotationy_item"
+          android:title="RotaçãoY"/>
+    <item android:id="@+id/rotationz_item"
+          android:title="RotaçãoZ"/>
+
+</menu>

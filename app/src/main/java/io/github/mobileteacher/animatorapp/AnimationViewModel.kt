@@ -9,8 +9,13 @@ class AnimationViewModel: ViewModel() {
 //    var rotationY: Int = 0
     val rotationY = MutableLiveData<Int>().apply {
         value = 0
-
     }
+
+    val rotationZ = MutableLiveData<Int>().apply {
+        value = 0
+    }
+
+    val currentAxis = MutableLiveData<Int>().apply { value = Y }
 
     init {
         rotationY.observeForever {rotation->

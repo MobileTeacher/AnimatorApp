@@ -42,6 +42,10 @@ class CardViewerFragment : Fragment() {
             square.rotationY = it.toFloat()
         })
 
+        animationViewModel.rotationZ.observe(this, Observer {
+            square.rotation = it.toFloat()
+        })
+
         animationViewModel.flipped.observe(this, Observer {
             if (it){
                 square.setCardBackgroundColor(Color.MAGENTA)
